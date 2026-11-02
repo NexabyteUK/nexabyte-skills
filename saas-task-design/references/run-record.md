@@ -12,7 +12,7 @@ Keep this record short enough to review alongside the proposed screen. Record fa
 
 ## Customer task
 
-Who arrives, why, what they need to understand, the available decision, and what the system handles without them.
+Who arrives, why, what they need to understand, the available decision, and what the system handles without them. Draft the minimum content for each state before reconciling it with the existing screen.
 
 ## Evidence
 
@@ -21,14 +21,14 @@ Who arrives, why, what they need to understand, the available decision, and what
 
 ## Content decisions
 
-| Existing content | Visible / on demand / removed | Reason for this customer's task |
-| ---------------- | ----------------------------- | ------------------------------- |
+| Existing content | Visible / on demand / removed | What is lost if absent now; actual destination if moved |
+| ---------------- | ----------------------------- | ------------------------------------------------------ |
 
-Explain any changed terminology or new interaction. Name an unsupported automatic alternative as a product question, not as shipped behaviour.
+Explain any changed terminology or new interaction. Record proposed departures from explicit criteria and the customer decision that authorises them, or leave them visibly pending review. Name an unsupported automatic alternative as a product question, not as shipped behaviour.
 
 ## Reproduction and checks
 
-Record the base revision, patch, build/capture commands and required tools. Include scope of tests, rendered sizes/themes, keyboard/interaction results, independent comprehension answers and unresolved concerns. Preserve the first proposal if later revisions are compared against it.
+Record the base revision, patch, build/capture commands and required tools. Include scope of tests, rendered sizes/themes, keyboard/interaction results, independent comprehension and removal-review answers, the resulting changes and unresolved concerns. Preserve the first proposal if later revisions are compared against it.
 
 ## Next decision
 

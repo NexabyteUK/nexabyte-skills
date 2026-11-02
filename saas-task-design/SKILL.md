@@ -9,7 +9,7 @@ Use the customer's decision to determine the screen's structure. A voice guide s
 
 ## Establish the task and facts
 
-Read the story, relevant customer decisions, the current screen, the voice guide and the smallest relevant behaviour contract. Distinguish a proposed design, an approved decision and implemented behaviour. Earlier agent recommendations are not customer approval.
+Read the story, relevant customer decisions, the current screen, the voice guide and the smallest relevant behaviour contract. Distinguish a proposed design, an approved decision and implemented behaviour. Earlier agent recommendations are not customer approval. Separate required outcomes from proposed wording and placement: an acceptance criterion can establish a capability without earning a sentence on the current screen. Preserve functional requirements and explicit customer decisions. If a better placement conflicts with an explicit criterion, show the proposed departure and its reason in the review evidence; do not silently mark that criterion satisfied or treat the proposal as approved. Apply later customer decisions over earlier criteria.
 
 Write a brief in ordinary language: who arrives, what brought them here, what they need to understand, and what they can do next. Identify the actual decision. If the customer has nothing useful to decide, consider an automatic outcome or notification, but don't invent automation to improve the mockup.
 
@@ -21,11 +21,17 @@ For a planning-only request, return the brief, evidence and content decisions wi
 
 ## Decide what belongs on the screen
 
-For each existing block, choose one of these dispositions and give a reason tied to the task:
+First draft the minimum content for each state from the person's task and verified facts, without using the existing blocks as the outline. Then compare it with the current screen. Reusing the visual system does not mean reusing its composition. A shared component's default layout is not an approved screen structure: compose its existing primitives locally when needed, rather than retaining unnecessary hierarchy or changing the shared component for every caller.
+
+Truth, necessity and placement are separate checks. For each retained line, icon, section and control, name what the person would misunderstand, be unable to do, or materially risk if it were absent **in this state**. "It is true", "it could be useful", "the old screen has it" and "the acceptance criteria mention it" are not sufficient reasons for visibility. An explanation of a visible button often adds nothing. Do not turn rare future tasks into instructions beside an already completed task.
+
+For each existing block, choose one of these dispositions and record that concrete consequence:
 
 - **Visible:** needed to understand the current situation, choose an action or avoid a material mistake.
-- **Available on demand:** evidence, history or detail useful for checking the decision but unnecessary for making it initially.
+- **Available on demand:** supporting detail with a distinct customer use that can wait. Name that use, the actual supported destination and how it is reached. Remove redundant content before considering disclosure; hiding it does not justify retaining it. Do not invent a link or move information to a nonexistent surface.
 - **Removed:** duplicate information or content that does not help this reader in this state. Do not delete retained business evidence from the product.
+
+Review the whole initial view as well as each element. Choose its leading message and group the facts that explain that outcome; do not give every fact equal prominence through a separate heading, label or row. Necessary somewhere does not mean necessary immediately. Details used only to verify or reconcile an outcome can be available on demand, while consequences and information needed for the current decision stay visible. Choose this per state: success, uncertainty and failure need not share the same summary. Do not impose a disclosure or a line-count limit on every screen.
 
 Translate system events into their customer consequence. Separate known facts from unknown effects. Explain specialised terms only where the customer needs them. Challenge internal labels, capitalisation and repeated status fragments; document intentional exceptions to the voice guide instead of silently changing it for the whole product.
 
@@ -46,6 +52,8 @@ Before providing the rationale, ask an independent reader or permitted review ag
 - What happens after that action? Does anything need confirmation?
 - What can the customer continue doing, if the screen establishes that?
 - Where would they look for supporting detail?
+
+Also ask what could be removed or moved without making the current task harder, and whether anything implies an unnecessary action. Comprehensible text can still be unnecessary. Treat missing details as candidates, not a list to add: decide whether the reader needs each one now. Keep a retained element when the evidence warrants it; there is no deletion quota.
 
 Record their actual answers and any mistaken inference. Fix a mismatch with the product facts; don't award yourself a clarity score. A model review is a comprehension probe, not user research. Ask the user to judge the concrete proposal without treating agent agreement as approval.
 
