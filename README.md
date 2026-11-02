@@ -10,6 +10,7 @@ Each subdirectory is a self-contained skill. Drop the directory into your skills
 |---|---|
 | [`atlassian-writer/`](./atlassian-writer) | Writes valid Atlassian Document Format (ADF) JSON for Jira and Confluence Cloud APIs — issue descriptions, comments, page bodies. Triggers automatically when a task touches a Jira or Confluence rich-text field. |
 | [`linear-story-writing/`](./linear-story-writing) | Nexabyte's rules for Linear labels, native dependencies and ownership of unfinished work. |
+| [`saas-task-design/`](./saas-task-design) | Rebuilds confusing SaaS flows around the customer’s decision, with evidence for claims, content decisions and an independent comprehension check. |
 | [`product-design/`](./product-design) | Design principles for mobile and web app UI, synthesised from Apple's Human Interface Guidelines, Nielsen Norman Group research and Linear's product philosophy, with links to the originals. Covers layout, interaction patterns, voice and microcopy, visual design, iOS and Android conventions, web and desktop, and an accessibility floor. Defers to a project's own `DESIGN.md`, and includes an opt-in Linear-style profile. |
 
 ## Installing a skill
