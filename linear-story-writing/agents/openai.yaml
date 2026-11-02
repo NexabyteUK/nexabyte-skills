@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nexabyte Linear rules"
+  short_description: "Apply labels, dependencies and unfinished-work rules"
+  default_prompt: "Use $linear-story-writing to apply Nexabyte's Linear labels, dependencies and unfinished-work rules to this story."
